@@ -13,23 +13,18 @@ class Agenda implements Subject {
     }
 
     @Override
-    public void removeObserver(Observer observer) {
-        observers.remove(observer);
-    }
-
-    @Override
     public void notifyObservers(String message) {
         for (Observer observer : observers) {
             observer.update(message);
         }
     }
-
+    
     public void addCompromisso(String name, Date date, ScheduledExecutorService scheduler) {
         long delay = date.getTime() - System.currentTimeMillis();
         if (delay > 0) {
             scheduler.schedule(() -> notifyObservers(name), delay, TimeUnit.MILLISECONDS);
         } else {
-            JOptionPane.showMessageDialog(null, "Date and time must be in the future.", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "data e hora precisam estar no futuro", "Erro", JOptionPane.ERROR_MESSAGE);
         }
     }
 }
