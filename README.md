@@ -10,6 +10,6 @@ Saída:
 Mensagem de sucesso: "Compromisso adicionado com sucesso!"
 No momento do compromisso, uma notificação será exibida com a mensagem: "Compromisso: Reunião de Projeto"
 
-Renan Godoi Sant’Ana
-Ryan Lucas Mirallia
-Laura Martins Vieira Gonçalves
+Renan Godoi Sant’Ana  
+Ryan Lucas Mirallia  
+Laura Martins Vieira Gonçalves  
